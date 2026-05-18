@@ -1,0 +1,30 @@
+{
+  "board": "bttoctopus_pro_1.1",
+  "firmwareNew": "firmware.bin",
+  "firmware": 3.5,
+  "standalone": true,
+  "geometry": {
+    "type": "cartesian",
+    "mins": [0, 0, 0, 0, 0, 0, 0, 0],
+    "maxes": [420, 520, 100, 360, 360, 360, 360, 100]
+  },
+  "drives": [
+    { "driver": 0, "stepperDriver": "stepdir", "microstepping": 32, "steps_per_mm": 80, "max_speed": 300, "acceleration": 2000, "endstop_pin": "pg6", "endstop_type": 1 },
+    { "driver": 1, "stepperDriver": "stepdir", "microstepping": 32, "steps_per_mm": 80, "max_speed": 300, "acceleration": 2000, "endstop_pin": "pg9", "endstop_type": 1, "direction": 0 },
+    { "driver": 2, "stepperDriver": "stepdir", "microstepping": 16, "steps_per_mm": 400, "max_speed": 20, "acceleration": 200, "endstop_pin": "pg10", "endstop_type": 1 },
+    { "driver": 3, "stepperDriver": "stepdir", "microstepping": 32, "steps_per_mm": 80, "max_speed": 300, "acceleration": 2000, "endstop_type": 0 },
+    { "driver": 4, "stepperDriver": "stepdir", "microstepping": 32, "steps_per_mm": 80, "max_speed": 300, "acceleration": 2000, "endstop_type": 0 },
+    { "driver": 5, "stepperDriver": "stepdir", "microstepping": 16, "steps_per_mm": 8.8889, "max_speed": 100, "acceleration": 500, "endstop_type": 0 },
+    { "driver": 6, "stepperDriver": "stepdir", "microstepping": 32, "steps_per_mm": 8.8889, "max_speed": 100, "acceleration": 500, "endstop_type": 0 },
+    { "driver": 7, "stepperDriver": "stepdir", "microstepping": 16, "steps_per_mm": 400, "max_speed": 20, "acceleration": 200, "endstop_type": 0 }
+  ],
+  "network": {
+    "enabled": true,
+    "dhcp": true,
+    "protocols": { "http": true, "ftp": false, "telnet": false }
+  },
+  "heaters": [],
+  "num_nozzles": 0,
+  "tools": [],
+  "fans": []
+}
